@@ -1,0 +1,89 @@
+.wrapper h2 {
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 1rem;
+}
+
+.form,
+.summary {
+  background: white;
+  border-radius: 16px;
+  padding: 1.2rem;
+  border: 1px solid rgba(77, 163, 255, 0.15);
+  box-shadow: 0 12px 36px rgba(12, 44, 86, 0.06);
+}
+
+.inline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.6rem;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(77, 163, 255, 0.25);
+  background: #f8fbff;
+}
+
+.field span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+}
+
+.submit {
+  width: 100%;
+  margin-top: 0.75rem;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #0b1f33, #4da3ff);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.summary h3 {
+  margin-top: 0;
+}
+
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.line,
+.lineTotal {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.lineTotal {
+  border-top: 1px solid #eef3fb;
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+  font-weight: 800;
+}
+
+.error {
+  color: #d14343;
+}
+
+.success {
+  color: #0f9d58;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,95 @@
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  box-shadow: 0 16px 48px rgba(12, 44, 86, 0.08);
+  border: 1px solid rgba(77, 163, 255, 0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.thumb {
+  position: relative;
+  background: linear-gradient(135deg, #0b1f33, #4da3ff);
+  min-height: 160px;
+  display: grid;
+  place-items: center;
+}
+
+.badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem 0.75rem;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.85rem;
+}
+
+.imagePlaceholder {
+  width: 96px;
+  height: 96px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.14);
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 2rem;
+}
+
+.body {
+  padding: 1rem;
+  flex: 1;
+}
+
+.title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.price {
+  font-size: 1.3rem;
+  color: #0b5ed7;
+  margin: 0.4rem 0;
+  font-weight: 700;
+}
+
+.meta {
+  color: var(--muted);
+  margin: 0;
+}
+
+.actions {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0 1rem 1rem;
+  align-items: center;
+}
+
+.actions button,
+.secondary {
+  flex: 1;
+  border-radius: 12px;
+  padding: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.actions button {
+  background: linear-gradient(135deg, var(--primary), #79bbff);
+  color: white;
+  box-shadow: 0 10px 30px rgba(77, 163, 255, 0.35);
+}
+
+.secondary {
+  border: 1px solid rgba(77, 163, 255, 0.25);
+  color: var(--dark);
+  background: white;
+}

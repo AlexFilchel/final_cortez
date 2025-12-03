@@ -1,0 +1,22 @@
+.bar {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+}
+
+button {
+  border-radius: 999px;
+  padding: 0.55rem 1rem;
+  border: 1px solid rgba(77, 163, 255, 0.25);
+  background: #f3f6fb;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.active {
+  background: linear-gradient(135deg, var(--primary), #79bbff);
+  color: white;
+  border-color: transparent;
+}
