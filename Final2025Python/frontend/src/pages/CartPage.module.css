@@ -1,0 +1,95 @@
+.wrapper h2 {
+  margin-bottom: 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.list {
+  background: white;
+  border-radius: 16px;
+  padding: 1rem;
+  border: 1px solid rgba(77, 163, 255, 0.15);
+  box-shadow: 0 12px 36px rgba(12, 44, 86, 0.06);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid #eef3fb;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.name {
+  margin: 0;
+  font-weight: 700;
+}
+
+.meta {
+  margin: 0;
+  color: var(--muted);
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.controls input {
+  width: 70px;
+  padding: 0.35rem;
+  border-radius: 10px;
+  border: 1px solid rgba(77, 163, 255, 0.25);
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: #d14343;
+  cursor: pointer;
+}
+
+.summary {
+  background: linear-gradient(135deg, #0b1f33, #4da3ff);
+  color: white;
+  border-radius: 16px;
+  padding: 1.25rem;
+  box-shadow: 0 12px 36px rgba(12, 44, 86, 0.12);
+}
+
+.totalLabel {
+  margin: 0;
+  opacity: 0.8;
+}
+
+.total {
+  margin: 0.15rem 0 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background: white;
+  color: #0b1f33;
+  border-radius: 12px;
+  padding: 0.8rem 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

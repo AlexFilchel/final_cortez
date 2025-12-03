@@ -1,0 +1,14 @@
+.page {
+  min-height: 100vh;
+  background: linear-gradient(180deg, #f5f7fb 0%, #e8eef6 100%);
+}
+
+.main {
+  padding-top: 96px;
+}
+
+@media (max-width: 768px) {
+  .main {
+    padding-top: 88px;
+  }
+}
