@@ -1,0 +1,14 @@
+.product-grid {
+  display: grid;
+  gap: 14px;
+  margin-top: 12px;
+}
+
+.product-grid__empty {
+  text-align: center;
+  padding: 28px;
+  color: var(--muted);
+  background: var(--surface);
+  border-radius: 12px;
+  border: 1px dashed #cbd5e1;
+}
